@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public int _deadEnemy;
     public float _speedBullet;
     private void Start()
     {
@@ -16,8 +17,10 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Obstacle obstacle = collision.GetComponent<Obstacle>();
+
         if(obstacle != null)
         {
+            _deadEnemy++;
             Destroy(obstacle.gameObject);
             Destroy(gameObject);
         }
