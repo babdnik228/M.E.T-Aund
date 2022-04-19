@@ -127,6 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32877fbaf4f5a2488e9b8f4b06ada54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _particlEffect: {fileID: 6689492784684890854, guid: 4a3c913e405350741854a8138c5131b7, type: 3}
+  _music: {fileID: 9143277249173718503, guid: f4566be1f9a4021488da383d2e9234ed, type: 3}
 --- !u!50 &323414690706087370
 Rigidbody2D:
   serializedVersion: 4

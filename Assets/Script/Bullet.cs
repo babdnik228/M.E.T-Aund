@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public int _deadEnemy;
     public float _speedBullet;
+    [Space]
+    [SerializeField]
+    private GameObject _particlEffect;
+    [SerializeField]
+    [Space]
+    private GameObject _music;
     private void Start()
     {
         Destroy(gameObject, 3f);
@@ -20,9 +25,17 @@ public class Bullet : MonoBehaviour
 
         if(obstacle != null)
         {
-            _deadEnemy++;
+            StartCoroutine(CorDeadObstacle());
             Destroy(obstacle.gameObject);
             Destroy(gameObject);
         }
+    }
+    private IEnumerator CorDeadObstacle()
+    {
+        GameObject music = Instantiate(_music, transform.position, Quaternion.identity);
+        GameObject partical = Instantiate(_particlEffect, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(0.5f);
+        Destroy(music);
+        Destroy(partical);
     }
 }
