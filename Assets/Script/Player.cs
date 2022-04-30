@@ -4,14 +4,27 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Transform _pointShot;
-    public GameObject _bulletPrefab;
-    public float _timerShotInterv = 5;
-    public float _shotTimer;
+    [SerializeField]
+    private Transform _pointShot;
+    [SerializeField]
+    private GameObject _bulletPrefab;
+    [SerializeField]
+    private float _timerShotInterv = 5;
+    [SerializeField]
+    private float _shotTimer;
+    
+    public int _health;
+    [SerializeField]
+    private GameObject _panel;
     private void Update()
     {
         Move();
         Shoot();
+        if(_health <= 0)
+        {
+            _panel.SetActive(true);
+            Destroy(gameObject);
+        }
     }
     void Move()
     {
@@ -31,5 +44,9 @@ public class Player : MonoBehaviour
                 _shotTimer = _timerShotInterv;
             }
         }
+    }
+    public void TakeDamage(int damage)
+    {
+        _health -= damage;
     }
 }

@@ -326,6 +326,36 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!1 &6435712778510791263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7387181715708388630}
+  m_Layer: 0
+  m_Name: Shot
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7387181715708388630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6435712778510791263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.15, y: 0.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7951968928810880870}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7951968928810880891
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +368,6 @@ GameObject:
   - component: {fileID: 7951968928810880864}
   - component: {fileID: 7951968928810880869}
   - component: {fileID: 7951968928810880871}
-  - component: {fileID: 7951968928810880868}
   - component: {fileID: 276140887}
   m_Layer: 0
   m_Name: Player
@@ -360,6 +389,7 @@ Transform:
   m_Children:
   - {fileID: 7951968930447816808}
   - {fileID: 614143374924992439}
+  - {fileID: 7387181715708388630}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -461,22 +491,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7951968928810880868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7951968928810880891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70a98e43051c70c4a87c42f48870b4ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pointShot: {fileID: 7951968930447816808}
-  _bulletPrefab: {fileID: 8097122251815183464, guid: a19b81d70346afd4baefebab92127e10, type: 3}
-  _timerShotInterv: 2
-  _shotTimer: 0
 --- !u!114 &276140887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,7 +505,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _distance: 0
   _coins: 0
-  _deadEnemy: 0
 --- !u!1 &7951968930447816815
 GameObject:
   m_ObjectHideFlags: 0

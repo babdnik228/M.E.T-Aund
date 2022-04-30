@@ -13,7 +13,7 @@ public class Bonus : MonoBehaviour
         {
             playerManager._coins++;
             //bulletPrefab._speedBullet += 20;
-            playerScript._timerShotInterv = 0.2f;
+            //playerScript._timerShotInterv = 0.2f;
         }
     }
 }
