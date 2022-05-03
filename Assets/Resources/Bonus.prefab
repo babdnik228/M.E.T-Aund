@@ -148,3 +148,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b33adce1bd3ed48a4a739ab6c600e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _partcleCoins: {fileID: 1938903504478243409, guid: cac509a06692dc347a118b8e70b3e4a1, type: 3}
+  _musicPrefab: {fileID: 6364959029611918830, guid: 4433aaa12bc858d40b8495ffb03c9d6d, type: 3}

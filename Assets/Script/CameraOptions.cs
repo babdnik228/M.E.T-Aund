@@ -3,16 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraOptions : MonoBehaviour
-{
-    
+{ 
     void Start()
     {
-        Cursor.visible = false; 
-    }
-
-
-    void Update()
-    {
-        
+            Cursor.visible = false;
     }
 }

@@ -100,9 +100,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.06, y: -0.32}
   serializedVersion: 2
-  m_Radius: 0.0001
+  m_Radius: 0.5
 --- !u!50 &323414690706087370
 Rigidbody2D:
   serializedVersion: 4
@@ -150,6 +150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  _particDeadObstacle: {fileID: 143168297600484579, guid: eb3560e0b24765946b2b23ae40de9dd8, type: 3}
+  _musPrefab: {fileID: 9143277249173718503, guid: f4566be1f9a4021488da383d2e9234ed, type: 3}
 --- !u!1 &8902430155663292227
 GameObject:
   m_ObjectHideFlags: 0

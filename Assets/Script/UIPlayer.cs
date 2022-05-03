@@ -25,8 +25,5 @@ public class UIPlayer : MonoBehaviour
         _panelDistance.text = _distanceUI.text;
         _helthUI.text = _player._health.ToString();
     }
-    public void RestartButton()
-    {
-        SceneManager.LoadScene(0);
-    }
+   
 }

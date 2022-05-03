@@ -12,6 +12,10 @@ public class Player : MonoBehaviour
     private float _timerShotInterv = 5;
     [SerializeField]
     private float _shotTimer;
+    [SerializeField]
+    private GameObject _particlShot;
+    [SerializeField]
+    private GameObject _laserVolume;
     
     public int _health;
     [SerializeField]
@@ -40,6 +44,10 @@ public class Player : MonoBehaviour
         {
             if (_shotTimer <= 0)
             {
+                GameObject shotParticle = Instantiate(_particlShot, _pointShot.position, Quaternion.identity);
+                Destroy(shotParticle, 4f);
+                GameObject laserMus = Instantiate(_laserVolume, _pointShot.position, Quaternion.identity);
+                Destroy(laserMus, 2f);
                 Instantiate(_bulletPrefab, _pointShot.transform.position, Quaternion.identity);
                 _shotTimer = _timerShotInterv;
             }

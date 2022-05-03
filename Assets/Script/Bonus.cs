@@ -3,17 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Bonus : MonoBehaviour
-{   
+{
+    [SerializeField]
+    private GameObject _partcleCoins;
+    [SerializeField]
+    private GameObject _musicPrefab;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-      //  Bullet bulletScript = collision.GetComponent<Bullet>();
-        Player playerScript = collision.GetComponent<Player>();
         PlayerManager playerManager = collision.GetComponent<PlayerManager>();
-        if(playerScript )
+        if(playerManager != null)
         {
+            GameObject coinsParticle = Instantiate(_partcleCoins, transform.position, Quaternion.identity);
+            Destroy(coinsParticle, 0.6f);
+            GameObject music = Instantiate(_musicPrefab, transform.position, Quaternion.identity);
+            Destroy(music, 0.6f);
             playerManager._coins++;
-            //bulletPrefab._speedBullet += 20;
-            //playerScript._timerShotInterv = 0.2f;
+            Destroy(gameObject);
         }
     }
 }
