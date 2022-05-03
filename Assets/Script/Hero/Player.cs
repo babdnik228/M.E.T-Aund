@@ -70,7 +70,7 @@ public class Player : MonoBehaviour
     {
         GetComponent<BoxCollider2D>().enabled = false;
         _protectionCircle.SetActive(true);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         GetComponent<BoxCollider2D>().enabled = true;
         _protectionCircle.SetActive(false);
     }

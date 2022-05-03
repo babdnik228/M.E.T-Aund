@@ -33,7 +33,9 @@ public class Bullet : MonoBehaviour
     private IEnumerator CorDeadObstacle()
     {
         GameObject music = Instantiate(_music, transform.position, Quaternion.identity);
+        Destroy(music, 2f);
         GameObject partical = Instantiate(_particlEffect, transform.position, Quaternion.identity);
+        Destroy(partical, 2f);
         yield return new WaitForSeconds(0.5f);
         Destroy(music);
         Destroy(partical);
