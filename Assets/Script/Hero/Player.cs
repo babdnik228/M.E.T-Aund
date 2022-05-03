@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     private GameObject _particlShot;
     [SerializeField]
     private GameObject _laserVolume;
+    [SerializeField]
+    private GameObject[] _object;
     
     public int _health;
     [SerializeField]
@@ -26,6 +28,10 @@ public class Player : MonoBehaviour
         Shoot();
         if(_health <= 0)
         {
+            for (int i = 0; i < _object.Length; i++)
+            {
+                Destroy(_object[i]);
+            }
             _panel.SetActive(true);
             Destroy(gameObject);
         }

@@ -11445,6 +11445,38 @@ PrefabInstance:
       propertyPath: _timerShotInterv
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
+      propertyPath: _object.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
+      propertyPath: _object.Array.data[0]
+      value: 
+      objectReference: {fileID: 1755028802}
+    - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
+      propertyPath: _object.Array.data[1]
+      value: 
+      objectReference: {fileID: 1099635945}
+    - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
+      propertyPath: _object.Array.data[2]
+      value: 
+      objectReference: {fileID: 1593817030}
+    - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
+      propertyPath: _object.Array.data[3]
+      value: 
+      objectReference: {fileID: 877468867}
+    - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
+      propertyPath: _object.Array.data[4]
+      value: 
+      objectReference: {fileID: 1288122482}
+    - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
+      propertyPath: _object.Array.data[5]
+      value: 
+      objectReference: {fileID: 1775609536}
+    - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
+      propertyPath: _object.Array.data[6]
+      value: 
+      objectReference: {fileID: 898868330}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
 --- !u!1001 &8428987579017260382
