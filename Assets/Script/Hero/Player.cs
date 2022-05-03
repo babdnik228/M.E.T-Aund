@@ -18,7 +18,8 @@ public class Player : MonoBehaviour
     private GameObject _laserVolume;
     [SerializeField]
     private GameObject[] _object;
-    
+    [SerializeField]
+    private GameObject _protectionCircle;
     public int _health;
     [SerializeField]
     private GameObject _panel;
@@ -62,5 +63,15 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damage)
     {
         _health -= damage;
+        StartCoroutine(Respawn());
+        
+    }
+    private IEnumerator Respawn()
+    {
+        GetComponent<BoxCollider2D>().enabled = false;
+        _protectionCircle.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        GetComponent<BoxCollider2D>().enabled = true;
+        _protectionCircle.SetActive(false);
     }
 }
