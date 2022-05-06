@@ -25,6 +25,7 @@ public class Bullet : MonoBehaviour
 
         if(obstacle != null)
         {
+            PlayerManager._deadObstacle++;
             StartCoroutine(CorDeadObstacle());
             Destroy(obstacle.gameObject);
             Destroy(gameObject);

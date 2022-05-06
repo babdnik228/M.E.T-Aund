@@ -256,7 +256,7 @@ MonoBehaviour:
   _prefabObject: {fileID: 2910780820158827750, guid: 49334ba7b49290e44a5c33c732b70eda, type: 3}
   _borderRight: {fileID: 1066346999}
   _borderLeft: {fileID: 1745364140}
-  _spawnInterval: 10
+  _spawnInterval: 7
   _spawnTimer: 0
 --- !u!1 &274536402
 GameObject:
@@ -5829,6 +5829,7 @@ MonoBehaviour:
   _panelCoins: {fileID: 385528474}
   _panelDistance: {fileID: 1100043520}
   _helthUI: {fileID: 1475049107}
+  _deadObstacleUI: {fileID: 877468869}
   _playerManager: {fileID: 276140887}
   _player: {fileID: 1438920884}
 --- !u!114 &599555530
@@ -11465,7 +11466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20db0f26e49086b46b13c8448d68dcc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeSpawn: 10
+  _timeSpawn: 7
   _spawn: {fileID: 257213015}
 --- !u!1 &1251077192
 GameObject:
