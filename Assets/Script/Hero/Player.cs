@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
     public int _health;
     [SerializeField]
     private GameObject _panel;
+    [SerializeField] private GameObject panelUpdater;
+
     private void Update()
     {
         Move();
@@ -33,6 +35,7 @@ public class Player : MonoBehaviour
             {
                 Destroy(_object[i]);
             }
+            panelUpdater.SetActive(true);
             _panel.SetActive(true);
             Destroy(gameObject);
         }
