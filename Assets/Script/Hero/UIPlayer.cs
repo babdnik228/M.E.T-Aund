@@ -12,6 +12,7 @@ public class UIPlayer : MonoBehaviour
     public Text _panelDistance;
     public Text _helthUI;
     public Text _deadObstacleUI;
+    public Text _panelDeadObstacleUI;
     [SerializeField]
     private PlayerManager _playerManager;
     [SerializeField]
@@ -26,6 +27,7 @@ public class UIPlayer : MonoBehaviour
         _cointTextUI.text = _playerManager._coins.ToString();
         _panelCoins.text = _cointTextUI.text;
         _panelDistance.text = _distanceUI.text;
+        _panelDeadObstacleUI.text = _deadObstacleUI.text;
         _helthUI.text = _player._health.ToString();
         
     }

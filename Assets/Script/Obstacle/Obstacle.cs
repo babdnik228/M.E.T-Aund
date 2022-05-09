@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    
     [SerializeField]
     private int damage = 1;
     [SerializeField]
     private GameObject _particDeadObstacle;
     [SerializeField]
     private GameObject _musPrefab;
+    private void Start()
+    {
+        
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Player player = collision.GetComponent<Player>();
