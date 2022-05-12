@@ -2372,7 +2372,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1222393427}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1921505597}
+        m_TargetAssemblyTypeName: Updater, Assembly-CSharp
+        m_MethodName: UpdateTimeShotInterval
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1222393427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2934,7 +2946,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1500880656}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1921505597}
+        m_TargetAssemblyTypeName: Updater, Assembly-CSharp
+        m_MethodName: UpdateHealth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1500880656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8301,6 +8325,7 @@ GameObject:
   - component: {fileID: 1921505596}
   - component: {fileID: 1921505595}
   - component: {fileID: 1921505594}
+  - component: {fileID: 1921505597}
   m_Layer: 5
   m_Name: Updater
   m_TagString: Untagged
@@ -8370,6 +8395,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1921505597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921505593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e1801286c0d0f42bded928f764d387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1438920884}
+  playerManager: {fileID: 276140887}
 --- !u!1 &1967682549
 GameObject:
   m_ObjectHideFlags: 0
@@ -8835,29 +8874,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1431267289}
     - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
+      propertyPath: _timerShotInterv
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
+      propertyPath: _object.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
       propertyPath: _object.Array.data[0]
       value: 
       objectReference: {fileID: 1755028802}
     - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
       propertyPath: _object.Array.data[1]
       value: 
-      objectReference: {fileID: 1099635945}
+      objectReference: {fileID: 1288122482}
     - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
       propertyPath: _object.Array.data[2]
       value: 
-      objectReference: {fileID: 1593817030}
+      objectReference: {fileID: 1775609536}
     - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
       propertyPath: _object.Array.data[3]
       value: 
-      objectReference: {fileID: 877468867}
+      objectReference: {fileID: 898868330}
     - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
       propertyPath: _object.Array.data[4]
       value: 
-      objectReference: {fileID: 1288122482}
+      objectReference: {fileID: 898868330}
     - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
       propertyPath: _object.Array.data[5]
       value: 
-      objectReference: {fileID: 1775609536}
+      objectReference: {fileID: 898868330}
     - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
       propertyPath: _object.Array.data[6]
       value: 

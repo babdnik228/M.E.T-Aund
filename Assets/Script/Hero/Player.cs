@@ -8,8 +8,8 @@ public class Player : MonoBehaviour
     private Transform _pointShot;
     [SerializeField]
     private GameObject _bulletPrefab;
-    [SerializeField]
-    private float _timerShotInterv = 5;
+    
+    public float _timerShotInterv = 5;
     [SerializeField]
     private float _shotTimer;
     [SerializeField]

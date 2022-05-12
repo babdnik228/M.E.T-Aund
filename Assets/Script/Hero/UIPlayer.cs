@@ -18,8 +18,6 @@ public class UIPlayer : MonoBehaviour
     [SerializeField]
     private Player _player;
     
-    
-    
     private void Update()
     {
         _deadObstacleUI.text = PlayerManager._deadObstacle.ToString();
