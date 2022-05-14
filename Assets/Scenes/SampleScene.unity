@@ -9086,6 +9086,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.28235295
       objectReference: {fileID: 0}
+    - target: {fileID: 8428987578008430674, guid: 1f6c746bb1b7b6140b608d23ad81dccb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8428987578008430675, guid: 1f6c746bb1b7b6140b608d23ad81dccb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 0
