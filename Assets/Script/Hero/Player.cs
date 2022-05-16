@@ -35,9 +35,10 @@ public class Player : MonoBehaviour
             {
                 Destroy(_object[i]);
             }
+            _health = 3;
             panelUpdater.SetActive(true);
             _panel.SetActive(true);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
     void Move()
