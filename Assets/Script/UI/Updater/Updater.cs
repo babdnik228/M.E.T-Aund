@@ -9,7 +9,9 @@ public class Updater : MonoBehaviour
         if(PlayerManager._deadObstacle >= 5)
         {
             player._health++;
+            PlayerPrefs.SetInt("Player_Health", player._health);
             PlayerManager._deadObstacle -= 5;
+            PlayerPrefs.SetInt("deadObstacle_player_pref", PlayerManager._deadObstacle);
         }
     }
     public void UpdateTimeShotInterval()

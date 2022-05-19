@@ -16,6 +16,7 @@ public class Bonus : MonoBehaviour
             GameObject music = Instantiate(_musicPrefab, transform.position, Quaternion.identity);
             Destroy(music, 0.6f);
             playerManager._coins++;
+            PlayerPrefs.SetInt("coins_player_pref", playerManager._coins);
             Destroy(gameObject);
         }
     }

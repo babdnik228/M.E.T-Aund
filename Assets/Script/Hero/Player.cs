@@ -27,7 +27,8 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject panelUpdater;
     private void Start()
     {
-        _health = 3;
+        int player_prefs_health = PlayerPrefs.GetInt("Player_Health");
+        _health = player_prefs_health + _health;
         player_singolton = this;
     }
 
@@ -37,12 +38,12 @@ public class Player : MonoBehaviour
         Shoot();
         if(_health <= 0)
         {
+            _health = 0;
             is_dead_indicator = true;
             for (int i = 0; i < _object.Length; i++)
             {
                 Destroy(_object[i]);
             }
-            _health = 3;
             panelUpdater.SetActive(true);
             _panel.SetActive(true);
             gameObject.SetActive(false);

@@ -11,8 +11,10 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
-        _deadObstacle = 0;
-        _coins = 0;
+        int deadObstaclePP = PlayerPrefs.GetInt("deadObstacle_player_pref");
+        _deadObstacle = deadObstaclePP;
+        int coinsPP = PlayerPrefs.GetInt("coins_player_pref");
+        _coins = coinsPP;
     }
     private void Update()
     {

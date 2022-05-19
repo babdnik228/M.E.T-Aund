@@ -9267,7 +9267,7 @@ PrefabInstance:
       objectReference: {fileID: 1431267289}
     - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
       propertyPath: _timerShotInterv
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8441890697622937282, guid: 4ada2672d2a0d4f4c939a1667b037fce, type: 3}
       propertyPath: _object.Array.size
