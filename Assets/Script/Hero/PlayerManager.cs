@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -10,7 +8,12 @@ public class PlayerManager : MonoBehaviour
     public static int _deadObstacle;
     [SerializeField] private GameObject panel;
     [SerializeField] private GameObject panelUpdater;
-    
+
+    private void Start()
+    {
+        _deadObstacle = 0;
+        _coins = 0;
+    }
     private void Update()
     {
         _distance++;

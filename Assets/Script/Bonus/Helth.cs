@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Helth : MonoBehaviour
@@ -18,6 +16,7 @@ public class Helth : MonoBehaviour
             GameObject music = Instantiate(_musicPrefab, transform.position, Quaternion.identity);
             Destroy(music, 0.6f);
             player._health++;
+
             Destroy(gameObject);
         }
     }

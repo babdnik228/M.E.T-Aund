@@ -355,13 +355,14 @@ GameObject:
   - component: {fileID: 382161603}
   - component: {fileID: 382161602}
   - component: {fileID: 382161601}
+  - component: {fileID: 382161604}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &382161600
 RectTransform:
   m_ObjectHideFlags: 0
@@ -425,7 +426,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 382161602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 382161604}
+        m_TargetAssemblyTypeName: RestartButton, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &382161602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,6 +477,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382161599}
   m_CullTransparentMesh: 1
+--- !u!114 &382161604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382161599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423b99d1a1ff36b4896d87b4b052303c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &701139591
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +500,7 @@ GameObject:
   - component: {fileID: 701139594}
   - component: {fileID: 701139593}
   - component: {fileID: 701139592}
+  - component: {fileID: 701139595}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -547,6 +573,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &701139595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701139591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42af669d3abbb76459f9831094aa6c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  is_meny_camera: 0
 --- !u!1 &773176054
 GameObject:
   m_ObjectHideFlags: 0

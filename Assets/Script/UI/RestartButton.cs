@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-
 public class RestartButton : MonoBehaviour
 {
-    private void Update()
+    public void RestartButtonClick()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SceneManager.LoadScene(0);
-        }
+        Player.player_singolton.is_dead_indicator = false;
+        SceneManager.LoadScene(0);  
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+    public void ExitToMeny()
+    {
+        Player.player_singolton.is_dead_indicator = false;
+        SceneManager.LoadScene(1);
     }
     
 }

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player player_singolton;
+    public bool is_dead_indicator;
     [SerializeField]
     private Transform _pointShot;
     [SerializeField]
     private GameObject _bulletPrefab;
-    
     public float _timerShotInterv = 5;
     [SerializeField]
     private float _shotTimer;
@@ -24,6 +25,11 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject _panel;
     [SerializeField] private GameObject panelUpdater;
+    private void Start()
+    {
+        _health = 3;
+        player_singolton = this;
+    }
 
     private void Update()
     {
@@ -31,6 +37,7 @@ public class Player : MonoBehaviour
         Shoot();
         if(_health <= 0)
         {
+            is_dead_indicator = true;
             for (int i = 0; i < _object.Length; i++)
             {
                 Destroy(_object[i]);
