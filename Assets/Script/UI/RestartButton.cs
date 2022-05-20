@@ -7,7 +7,7 @@ public class RestartButton : MonoBehaviour
     public void RestartButtonClick()
     {
         Player.player_singolton.is_dead_indicator = false;
-        SceneManager.LoadScene(0);  
+        SceneManager.LoadScene(1);  
     }
     public void ExitGame()
     {
@@ -16,7 +16,7 @@ public class RestartButton : MonoBehaviour
     public void ExitToMeny()
     {
         Player.player_singolton.is_dead_indicator = false;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
     
 }
