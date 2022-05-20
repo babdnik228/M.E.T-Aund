@@ -14,12 +14,4 @@ public class Updater : MonoBehaviour
             PlayerPrefs.SetInt("deadObstacle_player_pref", PlayerManager._deadObstacle);
         }
     }
-    public void UpdateTimeShotInterval()
-    {
-        if(playerManager._coins >= 2)
-        {
-            player._timerShotInterv--;
-            playerManager._coins -= 2;
-        }
-    }
 }
